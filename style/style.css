@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+header{
+    width: 100%;
+}
+
+.header-image{
+    height: 900px;
+    background-image: url("../images/header.jpg");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: 100% 100%; */
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* background: rgb(88, 85, 85); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container-uslug{
+    position: relative;
+    width: 80%;
+    height: 763px;
+    /* left: 360px; */
+    /* top: 1050px; */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-uslug-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.inner-uslug-photo{
+    width: 40%;
+    height: 80%;
+    background-image: url("../images/uslug-photo.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    text-align: center;
+}
+
+.inner-container-tarif{
+    position: relative;
+    width: 80%;
+    height: 765px;
+    /* left: 360px;
+    top: 1963px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-tarif-text{
+    height: 100%;
+    width: 60%;
+    
+}
+
+.first-table{
+    margin-bottom: 40px;
+}
+
+.second-table{
+    width: 100%;
+    height: 70%;
+}
+
+.second-table tr td{
+    padding: 20px;
+}
+
+.second-table tr:first-child{
+    height: 200px;
+}
+
+.table-first-photo{
+    background-image: url("../images/table-first-photo.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.inner-tarif-photo{
+    height: 100%;
+    width: 40%;
+}
+
+.tarif-text{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarif-photo{
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/tarif-photo.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
+
+}
+
+.inner-container-tsitata{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* left: 0px;
+    top: 2878px; */
+    /* background-color: azure; */
+    background-image: url("../images/tsitata.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.inner-container-tsitata p{
+    width: 60%;
+    text-align: center;
+}
+
+.inner-container-clients{
+    position: relative;
+    width: 80%;
+    height: 495px;
+    /* left: 360px;
+    top: 3528px; */
+    /* background-color: blanchedalmond; */
+    display: flex;
+    flex-direction: row;
+}
+
+.clients-photo{
+    width: 40%;
+    height: 100%;
+}
+
+.bottom-photo-clients{
+    width: 80%;
+    height: 80%;
+    background-image: url("../images/clients-photo.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
+}
+
+.clients-text{
+    width: 60%;
+    height: 100%;
+}
+
+.clients-text p{
+    margin-bottom: 20px;
+    line-height: 2.0;
+}
+
+.clients-text p:nth-child(2n){
+    margin-left: 50px;
+}
+
+.inner-container-5{
+    position: relative;
+    width: 80%;
+    height: 730px;
+    /* left: 360px;
+    top: 4173px; */
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-container5-text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inner-container5-photo{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container5-phot{
+    width: 80%;
+    height: 80%;
+    background-image: url("../images/5crock.png");
+    /* background-repeat: no-repeat; */
+    /* object-fit: cover; */
+    background-size: 100% 100%;
+
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 730px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url("../images/footer.png");
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* top: 5053px; */
+}
+
+@media screen and (max-width: 749px) {
+    .header-image{
+        height: 400px;
+    }
+
+    .inner-container-uslug{
+        flex-direction: column;
+    }
+    
+}
