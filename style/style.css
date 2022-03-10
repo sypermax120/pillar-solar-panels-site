@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Noto Sans", sans-serif;
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #303030;
 }
 
 header{
@@ -10,19 +21,17 @@ header{
 }
 
 .header-image{
-    height: 900px;
     background-image: url("../images/header.jpg");
+    height: 900px;
     object-fit: contain;
     background-repeat: no-repeat;
-    background-size: contain;
-    /* background-size: 100% 100%; */
-
+    background-size: cover;
+    background-position: top;
 }
 
 .container{
     width: 100%;
     height: 100%;
-    /* background: rgb(88, 85, 85); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,42 +41,44 @@ header{
 .inner-container-uslug{
     position: relative;
     width: 80%;
-    height: 763px;
-    /* left: 360px; */
-    /* top: 1050px; */
+    height: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 0 25px 0;
 }
 
 .inner-uslug-text{
-    width: 40%;
+    width: 45%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
 }
-.inner-uslug-photo{
-    width: 40%;
-    height: 80%;
-    background-image: url("../images/uslug-photo.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
-    text-align: center;
+.inner-uslug-text p{
+    padding-bottom: 20px;
 }
+
+.inner-uslug-photo{
+    width: 45%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+  }
 
 .inner-container-tarif{
     position: relative;
     width: 80%;
-    height: 765px;
-    /* left: 360px;
-    top: 1963px; */
-    /* background-color: aqua; */
+    height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 25px 0;
 }
 
 .inner-tarif-text{
@@ -89,70 +100,45 @@ header{
     padding: 20px;
 }
 
-.second-table tr:first-child{
-    height: 200px;
-}
-
-.table-first-photo{
-    background-image: url("../images/table-first-photo.jpg");
-    background-size: 100% 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-}
 
 .inner-tarif-photo{
     height: 100%;
     width: 40%;
 }
 
-.tarif-text{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-}
 
-.tarif-photo{
-    width: 100%;
-    height: 70%;
-    background-image: url("../images/tarif-photo.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: 100% 100%;
-
-}
-
+/* .................................................. */
 .inner-container-tsitata{
     position: relative;
     width: 100%;
     height: 500px;
-    /* left: 0px;
-    top: 2878px; */
-    /* background-color: azure; */
     background-image: url("../images/tsitata.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: 100% 100%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
+
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 .inner-container-tsitata p{
-    width: 60%;
+    width: 80%;
     text-align: center;
 }
 
+
+/* .................................................. */
 .inner-container-clients{
     position: relative;
     width: 80%;
-    height: 495px;
-    /* left: 360px;
-    top: 3528px; */
-    /* background-color: blanchedalmond; */
+    height: 100%;
     display: flex;
     flex-direction: row;
+    padding: 25px 0 25px 0;
+    justify-content: space-between;
 }
 
 .clients-photo{
@@ -160,17 +146,8 @@ header{
     height: 100%;
 }
 
-.bottom-photo-clients{
-    width: 80%;
-    height: 80%;
-    background-image: url("../images/clients-photo.jpg");
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: 100% 100%;
-}
-
 .clients-text{
-    width: 60%;
+    width: 55%;
     height: 100%;
 }
 
@@ -183,44 +160,41 @@ header{
     margin-left: 50px;
 }
 
+
+/* .................................................. */
 .inner-container-5{
     position: relative;
     width: 80%;
-    height: 730px;
-    /* left: 360px;
-    top: 4173px; */
-    /* background-color: beige; */
+    height: 100%;
     display: flex;
     flex-direction: row;
+    padding: 25px 0 25px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .inner-container5-text{
     width: 40%;
     height: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
 }
 
+.inner-container5-text p{
+    margin-bottom: 20px;
+}
+
 .inner-container5-photo{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container5-phot{
-    width: 80%;
-    height: 80%;
-    background-image: url("../images/5crock.png");
-    /* background-repeat: no-repeat; */
-    /* object-fit: cover; */
-    background-size: 100% 100%;
 
-}
-
+/* .................................................. */
 footer{
     position: relative;
     width: 100%;
@@ -228,21 +202,52 @@ footer{
     left: 0px;
     bottom: 0px;
     background-image: url("../images/footer.png");
+
     object-fit: contain;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-    /* background-attachment: fixed; */
-    /* top: 5053px; */
+    background-size: cover;
+    background-position: top;
 }
 
+
+/* .................................................. */
 @media screen and (max-width: 749px) {
-    .header-image{
-        height: 400px;
+
+    /* .inner-container-uslug{
+        flex-direction: column;
+    } */
+
+    .inner-uslug-photo {
+        margin-top: 40px;
+        width: 80%;
+    }
+/* 
+    .inner-container-tarif{
+        flex-direction: column;
+    } */
+
+    tr{
+        display: flex;
+        flex-direction: column;
     }
 
-    .inner-container-uslug{
+    .inner-tarif-photo{
+        width: 80%;
+    }
+
+    .inner-container-clients{
         flex-direction: column;
+    }
+
+    .inner-container-uslug, .inner-container-tarif, .clients-photo, .clients-text, .inner-container-5{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-container-tsitata{
+        font-size: 18px;
     }
     
 }
